@@ -1,3 +1,5 @@
+/* styles.css */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4ede8; /* Colore della carta vecchia */
@@ -7,43 +9,44 @@ body {
     padding: 0;
 }
 
-header {
-    background-color: #d8c3a5; /* Colore di sfondo dell'intestazione */
-    padding: 20px;
-    text-align: center;
-}
-
-main {
+.container {
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
 }
 
-section {
-    background-color: rgba(255, 255, 255, 0.8); /* Sfondo della sezione principale con leggera opacità */
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px; /* Bordi arrotondati */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombra leggera */
-}
-
-footer {
-    background-color: #d8c3a5; /* Colore di sfondo del piè di pagina */
+.header {
+    background-color: #d8c3a5; /* Colore di sfondo della testata */
     padding: 10px;
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    border-bottom: 1px solid #ccc;
 }
 
-/* Effetto grana o filigrana spessa */
-body::after {
-    content: '';
-    background-image: url('path/to/your-grainy-image.png'); /* Immagine con la grana o filigrana */
-    opacity: 0.1; /* Opacità dell'immagine */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    pointer-events: none; /* Permette il click sugli elementi sottostanti */
-    z-index: -1;
+.navbar {
+    background-color: #555; /* Colore di sfondo della barra di navigazione */
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.content {
+    padding: 20px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #d8c3a5; /* Colore di sfondo del piè di pagina */
 }
