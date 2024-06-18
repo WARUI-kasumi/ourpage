@@ -14,9 +14,7 @@
         
         <div class="navbar">
             <a href="home.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <!-- Aggiungi altri link alla tua navigazione qui -->
+            <button onclick="logout()">Logout</button>
         </div>
         
         <div class="content">
@@ -24,10 +22,19 @@
             <p>Questa è la tua pagina principale dopo aver effettuato il login.</p>
             <p>Qui puoi aggiungere il contenuto specifico della home page del tuo sito.</p>
         </div>
-        
-        <div class="footer">
-            <p>© 2024 Il tuo sito | Tutti i diritti riservati</p>
-        </div>
     </div>
+
+    <div class="footer">
+        <p>© 2024 Il tuo sito | Tutti i diritti riservati</p>
+    </div>
+
+    <script>
+        function logout() {
+            // Simulazione del logout
+            if (confirm('Sei sicuro di voler effettuare il logout?')) {
+                window.location.href = 'index.html'; // Reindirizzamento alla pagina di login
+            }
+        }
+    </script>
 </body>
 </html>
