@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4ede8; /* Colore della carta vecchia */
+    color: #444; /* Colore del testo */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #d8c3a5; /* Colore di sfondo dell'intestazione */
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.8); /* Sfondo della sezione principale con leggera opacità */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Bordi arrotondati */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+}
+
+footer {
+    background-color: #d8c3a5; /* Colore di sfondo del piè di pagina */
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Effetto grana o filigrana spessa */
+body::after {
+    content: '';
+    background-image: url('path/to/your-grainy-image.png'); /* Immagine con la grana o filigrana */
+    opacity: 0.1; /* Opacità dell'immagine */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    pointer-events: none; /* Permette il click sugli elementi sottostanti */
+    z-index: -1;
+}
